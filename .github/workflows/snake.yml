@@ -17,13 +17,21 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: makh04
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+          outputs: dist/github-snake.svg dist/github-snake-dark.svg?palette=github-dark
 
       - name: Deploy to output branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
-          publish_branch: output
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/makh04/makh04.git out
+          cd out
+
+          git checkout --orphan output || git checkout output
+          rm -rf *
+
+          cp -r ../dist/* .
+
+          git add .
+          git commit -m "update snake"
+          git push origin output --force
