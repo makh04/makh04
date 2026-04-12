@@ -1,8 +1,10 @@
-# 👋 Hey, I'm Mak
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&size=26&duration=3500&pause=1500&color=2F80ED&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Makh;Building+AI-powered+automation+systems" />
+</p>
 
-🚀 Founder of PikaVoice  
+
+🚀 Founder of Pika Voice  
 💻 I build things so I don’t have to do things
-
 ---
 
 ## 🧠 About Me
@@ -17,7 +19,7 @@ I turn ideas into systems that actually *execute*.
 
 ## 🚀 What I'm Building
 
-### ⚡ PikaVoice
+### ⚡ Pika Voice
 
 An AI system that turns:
 
@@ -61,12 +63,12 @@ I don’t just build one thing...
 
 ---
 
-## 🐍 Contribution Snake (this one actually works 😎)
+## 🐍 Contribution Snake )
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-snake.svg" />
-  <img alt="github contribution snake" src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/makh04/makh04/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/makh04/makh04/output/github-snake.svg" />
+  <img alt="github contribution snake" src="https://raw.githubusercontent.com/makh04/makh04/output/github-snake.svg" />
 </picture>
 
 ---
