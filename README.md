@@ -3,8 +3,8 @@
 </p>
 
 
-🚀 Founder of Pika Voice  
-💻 I build things so I don’t have to do things
+ Founder of Pika Voice  
+ I build things so I don’t have to do things
 ---
 
 ## 🧠 About Me
@@ -17,7 +17,7 @@ I turn ideas into systems that actually *execute*.
 
 ---
 
-## 🚀 What I'm Building
+##  What I'm Building
 
 ### ⚡ Pika Voice
 
@@ -44,7 +44,7 @@ An AI system that turns:
 
 ---
 
-## 🧪 Other Projects
+## Other Projects
 
 I don’t just build one thing...
 
