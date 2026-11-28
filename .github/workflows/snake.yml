@@ -1,0 +1,37 @@
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: makh04
+          outputs: dist/github-snake.svg dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Deploy to output branch
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/makh04/makh04.git out
+          cd out
+
+          git checkout --orphan output || git checkout output
+          rm -rf *
+
+          cp -r ../dist/* .
+
+          git add .
+          git commit -m "update snake"
+          git push origin output --force
